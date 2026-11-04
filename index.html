@@ -1,44 +1,250 @@
 <!doctype html>
-<html lang="en" data-prerendered>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      // Run before prerendered section IDs exist, so a refresh cannot restore an old anchor.
-      if (performance.getEntriesByType('navigation')[0]?.type === 'reload') {
-        window.__snowmoonReloadRestoration = history.scrollRestoration;
-        history.scrollRestoration = 'manual';
-        if (location.hash) history.replaceState(history.state, '', location.pathname + location.search);
-        const resetTop = () => {
-          const root = document.documentElement, behavior = root.style.scrollBehavior;
-          root.style.scrollBehavior = 'auto';
-          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-          root.style.scrollBehavior = behavior;
-        };
-        resetTop();
-        requestAnimationFrame(() => { resetTop(); requestAnimationFrame(resetTop); });
-      }
-    </script>
-    <meta name="theme-color" content="#07152b" />
-    <meta name="description" content="SNOWMOON — One Moon. Infinite Dreams. Freedom. Privacy. Community." />
-    <link rel="icon" type="image/webp" href="/images/brand/snowmoon-token-gmgn.webp" />
-    <link rel="preload" as="font" type="font/woff2" href="/assets/work-sans-latin-900-normal-Bz42DoD_.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/assets/geist-latin-400-normal-B40WzpMT.woff2" crossorigin />
-    <link rel="preload" as="image" href="/images/optimized/hero-mobile.webp" media="(max-width: 600px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/optimized/hero-tablet.webp" media="(min-width: 600.01px) and (max-width: 850px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/optimized/hero-environment-1672.webp" media="(min-width: 850.01px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/brand-v2/lunar-core.webp" fetchpriority="high" />
-    <title>SNOWMOON — One Moon. Infinite Dreams.</title>
-    <script type="module" crossorigin src="/assets/index-B_ILrIuK.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-XLRpqJhR.css">
-  </head>
-  <body>
-    <div id="root"><link rel="preload" as="image" href="/images/optimized/avatar-128.webp"/><link rel="preload" as="image" href="/images/brand-v2/lunar-core.webp" fetchPriority="high"/><link rel="preload" as="image" href="/images/optimized/uniswap-64.webp"/><link rel="preload" as="image" href="/images/platforms/gmgn.png"/><link rel="preload" as="image" href="/images/optimized/dexscreener-64.webp"/><link rel="preload" as="image" href="/images/brand/snowmoon-token-gmgn.webp"/><div class="site "><a class="skip-link" href="#main">Skip to content</a><header class="header"><a class="brand" href="#top" aria-label="Snowmoon home"><img src="/images/optimized/avatar-128.webp" alt="" width="42" height="42"/><span>SNOWMOON</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="#story">The story</a><a href="#world">Two worlds</a><a href="#chapters">Chapters</a><a href="#media">Meme kit</a></nav><div class="header-actions"><button class="language" aria-label="Switch to Chinese">EN / ZH</button><a href="https://app.uniswap.org/swap?chain=mainnet&amp;outputCurrency=0xComingSoon" target="_blank" rel="noreferrer" class="button button-small">Buy SNOWMOON</a><button class="icon-button menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></button></div></header><main id="main"><section class="hero" id="top" aria-labelledby="hero-title"><div class="hero-viewport"><picture class="hero-picture"><source media="(max-width: 600px)" srcSet="/images/optimized/hero-mobile.webp"/><source media="(max-width: 850px)" srcSet="/images/optimized/hero-tablet.webp"/><img class="hero-art" src="/images/optimized/hero-environment-1672.webp" alt="" fetchPriority="high" decoding="async" width="1672" height="941"/></picture><div class="hero-shade"></div><div class="cinematic-stage" data-renderer="loading" data-assembled="false" aria-label="A silver-white crescent above an ice-blue and lavender faceted crystal, matching the brand cover." role="img"><img class="stage-fallback" src="/images/brand-v2/lunar-core.webp" alt="" fetchPriority="high" decoding="async" width="1254" height="1254"/><div class="stage-canvas"></div></div><div class="hero-meta"><span>ETHEREUM COMMUNITY MEME</span><span>SNOWMOON</span></div><div class="hero-copy"><p class="section-label">BORN FROM A STORY. POWERED BY THE COMMUNITY.</p><h1 id="hero-title">ONE MOON.<br/><span>INFINITE DREAMS.</span></h1><p class="hero-description">A story of freedom, privacy and choice.
-A meme culture written by all of us.</p><div class="hero-ctas"><div class="trade-links "><a href="https://app.uniswap.org/swap?chain=mainnet&amp;outputCurrency=0xComingSoon" target="_blank" rel="noreferrer" class="trade-button trade-uniswap" aria-label="Buy SNOWMOON on Uniswap"><img src="/images/optimized/uniswap-64.webp" alt="" width="24" height="24"/><span class="trade-primary-label">Buy $SNOWMOON</span><span class="trade-primary-short">Buy</span></a><a href="https://gmgn.ai/eth/token/0xComingSoon" target="_blank" rel="noreferrer" class="trade-button"><img src="/images/platforms/gmgn.png" alt="" width="24" height="24"/><span>GMGN</span></a><a href="https://dexscreener.com/ethereum/0xComingSoon" target="_blank" rel="noreferrer" class="trade-button" aria-label="DEX Screener"><img src="/images/optimized/dexscreener-64.webp" alt="" width="24" height="24"/><span class="trade-long-label">DEX Screener</span><span class="trade-short-label">DEX</span></a></div></div><div class="contract-block hero-contract-wrap"><div class="contract-meta"><span>Contract address</span><span class="contract-network"><i aria-hidden="true"></i>Ethereum</span></div><button class="hero-contract" aria-label="Copy contract: 0xComingSoon"><code class="contract-address"><span>0xa314a620827b87a08ec2</span><wbr/><span>1941ada465066585b5b8</span></code><span class="contract-copy-action" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" viewBox="0 0 256 256"><path d="M184,64H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V72A8,8,0,0,0,184,64Zm-8,144H48V80H176ZM224,40V184a8,8,0,0,1-16,0V48H72a8,8,0,0,1,0-16H216A8,8,0,0,1,224,40Z"></path></svg><span>Copy</span></span></button></div><div class="hero-socials"><a href="https://x.com/snowmoon_erc" target="_blank" rel="noreferrer" class=""><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 256 256"><path d="M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z"></path></svg>X / Twitter</a><a href="https://t.me/snowmoon_erc" target="_blank" rel="noreferrer" class="">Telegram</a></div></div><div class="hero-footer"><button class="replay-intro">REPLAY INTRO</button><button class="icon-button" aria-label="Pause motion" aria-pressed="false"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M216,48V208a16,16,0,0,1-16,16H160a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h40A16,16,0,0,1,216,48ZM96,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V48A16,16,0,0,0,96,32Z"></path></svg></button></div><div class="hero-scroll-caption" aria-hidden="true"><span>THE STORY CONTINUES</span><p>THE NEXT CHAPTER<br/><em>IS OURS.</em></p></div><div class="hero-wordmark-wrap" aria-hidden="true"><div class="hero-wordmark">SNOWMOON</div></div></div></section><div class="token-strip"><div class="token-identity"><img src="/images/optimized/avatar-128.webp" width="44" height="44" alt=""/><div><strong>$SNOWMOON</strong><span>ETHEREUM</span></div></div><div class="contract-block token-contract-wrap"><div class="contract-meta"><span>Contract address</span><span class="contract-network"><i aria-hidden="true"></i>Ethereum</span></div><button class="contract-copy" aria-label="Copy contract: 0xComingSoon"><code class="contract-address"><span>0xa314a620827b87a08ec2</span><wbr/><span>1941ada465066585b5b8</span></code><span class="contract-copy-action" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" viewBox="0 0 256 256"><path d="M184,64H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V72A8,8,0,0,0,184,64Zm-8,144H48V80H176ZM224,40V184a8,8,0,0,1-16,0V48H72a8,8,0,0,1,0-16H216A8,8,0,0,1,224,40Z"></path></svg><span>Copy</span></span></button></div><div class="trade-links trade-links-compact"><a href="https://app.uniswap.org/swap?chain=mainnet&amp;outputCurrency=0xComingSoon" target="_blank" rel="noreferrer" class="trade-button trade-uniswap" aria-label="Buy SNOWMOON on Uniswap"><img src="/images/optimized/uniswap-64.webp" alt="" width="24" height="24"/><span class="trade-primary-label">Buy $SNOWMOON</span><span class="trade-primary-short">Buy</span></a><a href="https://gmgn.ai/eth/token/0xComingSoon" target="_blank" rel="noreferrer" class="trade-button"><img src="/images/platforms/gmgn.png" alt="" width="24" height="24"/><span>GMGN</span></a><a href="https://dexscreener.com/ethereum/0xComingSoon" target="_blank" rel="noreferrer" class="trade-button" aria-label="DEX Screener"><img src="/images/optimized/dexscreener-64.webp" alt="" width="24" height="24"/><span class="trade-long-label">DEX Screener</span><span class="trade-short-label">DEX</span></a></div></div><section class="origin section-pad" id="story" aria-labelledby="origin-title"><div data-reveal="true"><p class="section-label">01 / WHERE IT BEGINS</p><h2 id="origin-title" class="origin-title">ONE STORY.
-ALL OF US.</h2><a href="https://vitalik.eth.limo/snowmoon/" target="_blank" rel="noreferrer" class="source-link">Read the novel<span>ENTER THE SNOWMOON WORLD</span></a></div><div class="origin-copy" data-reveal="true"><p>Freedom belongs to everyone. Privacy belongs in everyday life. Decentralization is a way to live.</p><p>From the streets of Veridia to the walls of the Arctic Empire, Snowmoon opens two different futures. We write what comes next.</p><div class="origin-facts"><span><b>32</b>CHAPTERS</span><span><b>02</b>VISIONS</span><span><b>01</b>MOON</span></div></div><figure class="origin-artwork" data-reveal="true"><img alt="An original Snowmoon illustration of Vitalik Buterin, an open book, two blue cities and the lunar crystal." width="1774" height="887" sizes="(max-width: 850px) 88vw, 86vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><figcaption><div><span>THE WORLD ON THE PAGE</span><strong>SNOWMOON / A NOVEL BY VITALIK BUTERIN</strong></div><a href="https://vitalik.eth.limo/snowmoon/" target="_blank" rel="noreferrer" class="inline-link">Read the novel</a></figcaption></figure></section><div class="belief-strip" aria-label="FREEDOM, PRIVACY, DECENTRALIZATION"><div><span aria-hidden="false"><span>FREEDOM<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>PRIVACY<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>DECENTRALIZATION<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span></span><span aria-hidden="true"><span>FREEDOM<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>PRIVACY<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>DECENTRALIZATION<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span></span><span aria-hidden="true"><span>FREEDOM<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>PRIVACY<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>DECENTRALIZATION<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span></span><span aria-hidden="true"><span>FREEDOM<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>PRIVACY<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span><span>DECENTRALIZATION<img src="/images/brand/snowmoon-token-gmgn.webp" alt=""/></span></span></div></div><section class="world section-pad" id="world" aria-labelledby="world-title"><div class="section-heading" data-reveal="true"><div><p class="section-label">02 / TWO CIVILIZATIONS, TWO FUTURES</p><h2 id="world-title">TWO CIVILIZATIONS.
-TWO VISIONS.</h2></div><p>Under one sky, two very different ideas of the future. Where do you stand?</p></div><div class="civilizations side-0"><img class="civilizations-image" alt="A forest city on the left and an ordered industrial city on the right." width="1672" height="941" sizes="(max-width: 850px) 96vw, 86vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><div class="civilization-dimmer" aria-hidden="true"></div><div class="world-caption"><span>Choose your side</span><span>01 / 02</span></div><div class="civilization-tabs" role="tablist" aria-label="Choose your side"><button id="civilization-0" class="civilization-tab" role="tab" aria-selected="true" aria-controls="civilization-panel" tabindex="0"><span class="side-number">0<!-- -->1</span><span><strong>VERIDIA</strong><small>Freedom / Privacy / Decentralization</small></span><span class="choice-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg></span></button><button id="civilization-1" class="civilization-tab" role="tab" aria-selected="false" aria-controls="civilization-panel" tabindex="-1"><span class="side-number">0<!-- -->2</span><span><strong>ARCTIC EMPIRE</strong><small>Control / Centralization / Absolute order</small></span><span class="choice-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></span></button></div></div><div class="civilization-panel" id="civilization-panel" role="tabpanel" aria-labelledby="civilization-0"><div><span class="signal-label">Your signal<!-- --> / <!-- -->VERIDIA</span><h3>Freedom, lived every day.</h3></div><div><p>Technology should protect individual choice. The community looks to Veridia as a vision of freedom, privacy and decentralization.</p><span class="micro-copy">A WORLD THAT BELONGS TO ITS PEOPLE.</span></div></div></section><section class="lore section-pad" aria-labelledby="lore-title"><div class="section-heading" data-reveal="true"><div><p class="section-label">03 / MORE THAN A NAME</p><h2 id="lore-title">THE WORLD
-BEHIND THE MEME.</h2></div><p>Know the story. Find what is worth making memes about.</p></div><div class="lore-grid"><article class="lore-card" data-reveal="true"><a href="https://vitalik.eth.limo/snowmoon/html/chapter-1.html" target="_blank" rel="noreferrer" class="lore-image"><img alt="Chapter 1: a forest city, sky bridge and toy drone." width="1672" height="941" sizes="(max-width: 600px) 88vw, (max-width: 850px) 29vw, 28vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span>CHAPTER <!-- -->01</span></a><div class="lore-card-heading"><h3>VERIDIA</h3><span>CRYPTOGRAPHY IN EVERYDAY LIFE</span></div><p>A forest city, stone homes and sky bridges. A watch verifies a passing toy drone without needing to know who owns it.</p><a href="https://vitalik.eth.limo/snowmoon/html/chapter-1.html" target="_blank" rel="noreferrer" class="inline-link">Read chapter<!-- --> <!-- -->01</a></article><article class="lore-card" data-reveal="true"><a href="https://vitalik.eth.limo/snowmoon/html/chapter-6.html" target="_blank" rel="noreferrer" class="lore-image"><img alt="Chapter 6: private digital payment in a Kalimar restaurant." width="1536" height="1024" sizes="(max-width: 600px) 88vw, (max-width: 850px) 29vw, 28vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span>CHAPTER <!-- -->06</span></a><div class="lore-card-heading"><h3>ZIPCOIN &amp; EMERALD</h3><span>PRIVATE MONEY. LOCAL AI.</span></div><p>Zipcoin is the novel’s private money. Emerald is local AI. Paying for a meal in Kalimar does not mean giving up your identity.</p><a href="https://vitalik.eth.limo/snowmoon/html/chapter-6.html" target="_blank" rel="noreferrer" class="inline-link">Read chapter<!-- --> <!-- -->06</a></article><article class="lore-card" data-reveal="true"><a href="https://vitalik.eth.limo/snowmoon/html/chapter-12.html" target="_blank" rel="noreferrer" class="lore-image"><img alt="Chapter 12: a Minpentai cellular-pattern tournament." width="1536" height="1024" sizes="(max-width: 600px) 88vw, (max-width: 850px) 29vw, 28vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span>CHAPTER <!-- -->12</span></a><div class="lore-card-heading"><h3>MINPENTAI</h3><span>SIMPLE RULES. COMPLEX WORLDS.</span></div><p>A strategy game of cellular patterns, gliders and walls. Small choices reshape the game as its grid continues to evolve.</p><a href="https://vitalik.eth.limo/snowmoon/html/chapter-12.html" target="_blank" rel="noreferrer" class="inline-link">Read chapter<!-- --> <!-- -->12</a></article></div></section><section class="chapters section-pad" id="chapters" aria-labelledby="chapters-title"><div class="section-heading" data-reveal="true"><div><p class="section-label">04 / WRITTEN BY THE COMMUNITY</p><h2 id="chapters-title">A STORY IN MOTION.</h2></div><p>Public dispatches from @snowmoonerc. Every chapter has a source.</p></div><div class="chapter-layout"><article class="featured-chapter" data-reveal="true"><div class="dispatch-image"><img alt="SNOWMOON community avatar: a silver crescent, ice-blue crystal, snow mountains and moonlight." width="400" height="400" decoding="async" fetchPriority="low" data-deferred="waiting"/><span>SNOWMOON<br/>COMMUNITY DISPATCH</span></div><div class="dispatch-copy"><p class="section-label">CHAPTER 01 / THE BEGINNING</p><h3>One story. One shared symbol.</h3><p>The contract address will be confirmed soon, opening a new chapter with “One Moon. Infinite Dreams.”</p><a href="https://x.com/snowmoon_erc/status/2001" target="_blank" rel="noreferrer" class="inline-link"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg>Read the X post</a></div></article><div class="chapter-list"><article class="chapter-item" data-reveal="true"><span class="chapter-number">0<!-- -->2</span><div><p class="section-label">DAY ONE / COMMUNITY</p><h3>Day one is only the beginning.</h3><p>The community’s Day One recap marks the first step from a story to a shared culture.</p><a href="https://x.com/snowmoon_erc/status/2002" target="_blank" rel="noreferrer" class="inline-link">Read the X post</a></div></article><article class="chapter-item" data-reveal="true"><span class="chapter-number">0<!-- -->3</span><div><p class="section-label">IDENTITY / BRAND</p><h3>A signal becomes recognizable.</h3><p>DEX Screener will update as soon as the contract address is confirmed.</p><a href="https://x.com/snowmoon_erc/status/2003" target="_blank" rel="noreferrer" class="inline-link">Read the X post</a><a href="https://x.com/snowmoon_erc/status/2004" target="_blank" rel="noreferrer" class="secondary-source">AVE / X</a></div></article><article class="chapter-item" data-reveal="true"><span class="chapter-number">0<!-- -->4</span><div><p class="section-label">CULTURE / THE NEXT CHAPTER</p><h3>Every meme has a story.</h3><p>One symbol. One community. SNOWMOON continues to find its own identity and place in meme culture.</p><a href="https://x.com/snowmoon_erc/status/2005" target="_blank" rel="noreferrer" class="inline-link">Read the X post</a></div></article></div></div></section><section class="media section-pad" id="media" aria-labelledby="media-title"><div class="section-heading" data-reveal="true"><div><p class="section-label">05 / KEEP THE IMAGINATION GOING</p><h2 id="media-title">MAKE THE
-NEXT MEME.</h2></div><p>Take the artwork. Make it yours. The next image could come from you.</p></div><div class="media-grid"><button class="media-tile media-tile-0" aria-label="View artwork: THE SNOWMOON WORLD"><div class="media-image"><img alt="SNOWMOON brand cover: deep-blue cosmos, a textured moon, snow cities and a silver lunar crystal." width="2172" height="724" sizes="(max-width: 600px) 88vw, (max-width: 850px) 44vw, 36vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span class="media-open"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></span></div><span class="media-tile-label"><strong>THE SNOWMOON WORLD</strong><span>Brand cover</span></span></button><button class="media-tile media-tile-1" aria-label="View artwork: THE LUNAR CORE"><div class="media-image"><img alt="A silver-white crescent above an ice-blue and lavender faceted crystal, matching the brand cover." decoding="async" fetchPriority="low" data-deferred="waiting"/><span class="media-open"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></span></div><span class="media-tile-label"><strong>THE LUNAR CORE</strong><span>Transparent artwork</span></span></button><button class="media-tile media-tile-2" aria-label="View artwork: TWO CIVILIZATIONS"><div class="media-image"><img alt="A forest city on the left and an ordered industrial city on the right." width="1672" height="941" sizes="(max-width: 600px) 88vw, (max-width: 850px) 44vw, 36vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span class="media-open"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></span></div><span class="media-tile-label"><strong>TWO CIVILIZATIONS</strong><span>Two worlds</span></span></button><button class="media-tile media-tile-3" aria-label="View artwork: THE AUTHOR’S WORLD"><div class="media-image"><img alt="An original Snowmoon illustration of Vitalik Buterin, an open book, two blue cities and the lunar crystal." width="1774" height="887" sizes="86vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><span class="media-open"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></span></div><span class="media-tile-label"><strong>THE AUTHOR’S WORLD</strong><span>Story artwork</span></span></button></div></section><section class="community" id="community" aria-labelledby="community-title"><img alt="" class="community-art" width="1672" height="941" sizes="100vw" decoding="async" fetchPriority="low" data-deferred="waiting"/><img alt="" class="community-core" width="1254" height="1254" decoding="async" fetchPriority="low" data-deferred="waiting"/><div class="community-shade"></div><div class="community-content" data-reveal="true"><p class="section-label">EVERYONE IS THE NEXT CHAPTER</p><h2 id="community-title">NO KINGS.<br/>NO MASTERS.<br/><span>JUST MEMES.</span></h2><p>A story written by one.
-A culture created by all.</p><div class="community-ctas"><a href="https://x.com/snowmoon_erc" target="_blank" rel="noreferrer" class="button"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg>Join us on X</a><a href="https://t.me/snowmoon_erc" target="_blank" rel="noreferrer" class="button button-outline">Join Telegram</a></div></div><span class="community-signature">ONE MOON. INFINITE DREAMS.</span></section></main><footer class="footer"><div class="footer-top"><a href="#top" class="footer-wordmark">SNOWMOON</a><div><a href="https://x.com/snowmoon_erc" target="_blank" rel="noreferrer" class="">X / Twitter</a><a href="https://t.me/snowmoon_erc" target="_blank" rel="noreferrer" class="">Telegram</a><a href="https://vitalik.eth.limo/snowmoon/" target="_blank" rel="noreferrer" class="">Read the novel</a></div></div><div class="footer-bottom"><p>ONE MOON. INFINITE DREAMS.</p><span>© 2026 SNOWMOON</span></div></footer><dialog class="media-dialog"></dialog><div role="status" aria-live="polite" class="toast "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg></div></div></div>
-  </body>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SNOWMOON — The Snowmoon Codex | $SNOWMOON on Ethereum</title>
+<meta name="description" content="A fan-made community meme token inspired by Snowmoon, an open novel of Veridia, Dzego, the United Cities and the Arctic Empire. SNOWMOON. Infinite Dreams.">
+<meta property="og:title" content="SNOWMOON — The Snowmoon Codex"><meta property="og:image" content="assets/img/hero-moon.webp">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Mountains+of+Christmas:wght@700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 6 6-6M5 21h14"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-flake" viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7M9 4l3 2 3-2M9 20l3-2 3 2M3 10l3 0 1-3M21 14h-3l-1 3M3 14h3l1 3M21 10h-3l-1-3"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4M3 7v11a2 2 0 0 0 2 2h15V9H5a2 2 0 0 1-2-2z"/><circle cx="16" cy="14.5" r="1.2"/></symbol>
+  <symbol id="i-eth" viewBox="0 0 24 24"><path d="M12 2l6 10-6 3.5L6 12zM6 13.5l6 8.5 6-8.5-6 3.5z"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-4-4M20 16H6l4 4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></symbol>
+  <symbol id="i-seal" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+</svg>
+
+<!-- INTRO: frozen codex cover cracks open -->
+<div id="intro" aria-hidden="true">
+  <div class="cover cover-l"><div class="cover-in"></div></div>
+  <div class="cover cover-r"><div class="cover-in"></div></div>
+  <svg class="cracks" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M500 0 L488 140 L520 260 L470 380 L515 500 L480 640 L525 760 L490 880 L500 1000"/><path d="M515 500 L640 430 L760 470 L900 380"/><path d="M470 380 L340 330 L210 390 L80 300"/><path d="M480 640 L330 700 L180 660"/><path d="M525 760 L680 820 L840 790"/></svg>
+  <div class="seal">
+    <img src="assets/img/logo.webp" alt="" width="180" height="180">
+    <p class="seal-t frost-text">The Snowmoon Codex</p>
+    <p class="seal-s">Year 3724 &middot; the month of Snowmoon</p>
+    <button id="openCodex" class="btn-ghost" type="button">Break the seal</button>
+  </div>
+</div>
+
+<canvas id="snow" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="frost-edge" aria-hidden="true"></div>
+
+<a href="#folio-1" class="skip">Skip to content</a>
+
+<header class="topbar">
+  <a href="#top" class="brand" aria-label="SNOWMOON home"><img src="assets/img/logo.webp" alt="SNOWMOON logo" width="40" height="40"><span>SNOWMOON</span></a>
+  <div class="topbar-r">
+    <a class="icon-btn x-link" target="_blank" rel="noopener" aria-label="X / Twitter"><img src="assets/brand/x.svg" alt=""></a>
+    <a class="icon-btn tg-link" target="_blank" rel="noopener" aria-label="Telegram"><img src="assets/brand/telegram.svg" alt=""></a>
+    <!-- <a class="icon-btn cg-link" target="_blank" rel="noopener" aria-label="CoinGecko"><img src="assets/coingecko.png" alt=""></a> -->
+    <a class="btn-ice buy-link" target="_blank" rel="noopener"><img src="assets/brand/uniswap.png" alt="">Buy<span class="hide-sm">&nbsp;<span class="dollar">$</span>SNOWMOON</span></a>
+  </div>
+</header>
+
+<!-- NAV: moon-phase rail -->
+<nav class="phase-rail" aria-label="Codex folios">
+  <a href="#top" data-phase="0"><i></i><span>Frontispiece</span></a>
+  <a href="#folio-1" data-phase="1"><i></i><span>I · One Story</span></a>
+  <a href="#folio-2" data-phase="2"><i></i><span>II · Two Worlds</span></a>
+  <a href="#folio-3" data-phase="3"><i></i><span>III · Chapters</span></a>
+  <a href="#folio-4" data-phase="4"><i></i><span>IV · Dispatches</span></a>
+  <a href="#folio-5" data-phase="5"><i></i><span>V · Meme Kit</span></a>
+  <a href="#folio-6" data-phase="6"><i></i><span>VI · Acquire</span></a>
+  <a href="#folio-7" data-phase="7"><i></i><span>VII · Epilogue</span></a>
+</nav>
+
+<main>
+<!-- FRONTISPIECE -->
+<section id="top" class="front">
+  <div class="front-bg"><video src="bg.mp4" autoplay muted loop playsinline poster="assets/img/hero-moon.webp" aria-hidden="true"></video></div>
+  <div class="front-inner">
+    <p class="eyebrow">Born from a story &middot; Powered by the community</p>
+    <h1 class="title"><span class="frost-text snowcap">SNOWMOON.</span><em class="script">Infinite Dreams.</em></h1>
+    <p class="lede">Year 3724, the month of Snowmoon. A watch quietly proves a drone is harmless.<br>Within a year, free cities must defend that quiet against an empire.</p>
+    <div class="ca-plate">
+      <div class="ca-meta"><span>Contract &middot; Ethereum</span><code class="ca-value">0xComingSoon</code></div>
+      <button class="ca-copy" type="button" aria-label="Copy contract address"><span class="ca-btn"><svg><use href="#i-copy"/></svg>Copy</span></button>
+    </div>
+    <div class="cta-row">
+      <a class="btn-ice buy-link" target="_blank" rel="noopener"><img src="assets/brand/uniswap.png" alt="">Buy on Uniswap</a>
+      <a class="btn-ghost gmgn-link" target="_blank" rel="noopener"><img src="assets/brand/gmgn.png" alt="">GMGN</a>
+      <a class="btn-ghost chart-link" target="_blank" rel="noopener"><img src="assets/brand/dexscreener.png" alt="">DEX Screener</a>
+    </div>
+  </div>
+  <a href="#folio-1" class="turn-hint">Turn the page<svg><use href="#i-down"/></svg></a>
+</section>
+
+<!-- FOLIO I -->
+<section id="folio-1" class="folio" data-folio="I">
+  <div class="folio-head"><span class="folio-no">Folio I</span><span class="rule"></span><span class="folio-kicker">The author &amp; the open book</span></div>
+  <figure class="author-banner reveal"><img src="assets/img/author-banner.webp" alt="Community banner: the author above a fantasy landscape and an open Snowmoon book" loading="lazy"><figcaption>From the community banner &mdash; the creator, the moon, and the open book</figcaption></figure>
+  <div class="tome">
+    <figure class="author-stage reveal" aria-label="The Author">
+      <div class="author-moon" aria-hidden="true"></div>
+      <img class="author-cut" src="assets/img/author-cutout.webp" alt="The author, cut out from the community banner" loading="lazy">
+      <div class="author-frost" aria-hidden="true"></div>
+      <figcaption><span class="author-k">The Author</span><em>Wrote every word. Shared it all.</em></figcaption>
+    </figure>
+    <div class="tome-text">
+      <h2 class="h2 frost-text reveal">One Story.<br>Open to All.</h2>
+      <p class="drop reveal">Snowmoon is a free, open novel by one of crypto&rsquo;s best-known builders. The author released it under the GPL v3, so anyone can adapt it, as long as they keep their own pipeline open too.</p>
+      <p class="reveal">The title is a month: the story opens on Snowmoon 3 of the year 3724. Over 32 chapters it follows ordinary people in Veridia, Dzego and the United Cities, where privacy-preserving tech is part of daily life, as the Arctic Empire&rsquo;s drones press in.</p>
+      <dl class="stats reveal">
+        <div><dt class="count" data-to="32">32</dt><dd>Chapters</dd></div>
+        <div><dt class="count" data-to="4" data-pad="2">04</dt><dd>Nations</dd></div>
+        <div><dt class="count" data-to="1" data-pad="2">01</dt><dd>Snowmoon</dd></div>
+      </dl>
+      <a class="btn-ghost novel-link reveal" target="_blank" rel="noopener"><svg><use href="#i-book"/></svg>Read Snowmoon, free</a>
+    </div>
+  </div>
+  <div class="runes" aria-hidden="true"><div class="runes-track"><span>Zero-knowledge</span><svg><use href="#i-flake"/></svg><span>Local AI</span><svg><use href="#i-flake"/></svg><span>Graph Funding</span><svg><use href="#i-flake"/></svg><span>Grow roots, no head</span><svg><use href="#i-flake"/></svg><span>Zero-knowledge</span><svg><use href="#i-flake"/></svg><span>Local AI</span><svg><use href="#i-flake"/></svg><span>Graph Funding</span><svg><use href="#i-flake"/></svg><span>Grow roots, no head</span><svg><use href="#i-flake"/></svg></div></div>
+</section>
+
+<!-- FOLIO II: diptych with moon balance -->
+<section id="folio-2" class="folio" data-folio="II">
+  <div class="folio-head"><span class="folio-no">Folio II</span><span class="rule"></span><span class="folio-kicker">The map of 3724</span></div>
+  <h2 class="h2 frost-text center reveal">Open Nations.<br>One Empire.</h2>
+  <p class="sub center reveal">Veridia steers itself with cryptography and collective funding. The Arctic Empire sends drones. Pick a side.</p>
+  <div class="diptych" data-side="veridia">
+    <button class="leaf leaf-v" type="button" data-pick="veridia" aria-pressed="true">
+      <img src="assets/img/meldan.webp" alt="Meldan, the forest capital of Veridia, with stone houses and sky bridges" loading="lazy">
+      <span class="leaf-cap"><b>01</b><strong>Veridia</strong><small>Meldan / Kalimar / Order of Steering</small></span>
+    </button>
+    <div class="balance" aria-hidden="true"><div class="balance-moon"></div></div>
+    <button class="leaf leaf-a" type="button" data-pick="arctic" aria-pressed="false">
+      <img src="assets/img/arctic-fleet.webp" alt="An Arctic drone fleet sweeping over a frozen sea toward an ice citadel" loading="lazy">
+      <span class="leaf-cap"><b>02</b><strong>Arctic Empire</strong><small>Drones / Invasion / Lord Ephelion</small></span>
+    </button> 
+  </div>
+  <div class="verdict reveal" aria-live="polite">
+    <span class="verdict-k">Your signal / <b id="vName">VERIDIA</b></span>
+    <h3 id="vTitle">Privacy, built into the streets.</h3>
+    <p id="vBody">In Meldan, watches run zero-knowledge checks, Emerald runs locally on your own device, and a decentralized Order of Steering sets taxes and subsidies through Keepers and Sentinels.</p>
+    <p class="verdict-m" id="vMotto">Proof without exposure.</p>
+  </div>
+  <div class="allies">
+    <article class="ally reveal"><img src="assets/img/dzego.webp" alt="A neon electronics street in Pafogai Du, Dzego, with a pyramid mountain beyond" loading="lazy"><div><b>Dzego</b><p>Pafogai Du&rsquo;s chip workshops and underground shops. Sensors and anti-sensor foil on sale side by side. A strategy of growing roots, with no head to cut off.</p></div></article>
+    <article class="ally reveal"><img src="assets/img/freetown.webp" alt="The sprawling mixed skyline of Freetown in the United Cities" loading="lazy"><div><b>United Cities</b><p>Freetown is chaotic and cheap to govern, and home to the Freetown Economics Institute. Redshire, closer to the Arctic border, is the city that takes the threat most seriously.</p></div></article>
+  </div>
+</section>
+
+<!-- FOLIO III: horizontal pinned page-turn chapters -->
+<section id="folio-3" class="folio folio-chapters" data-folio="III">
+  <div class="folio-head"><span class="folio-no">Folio III</span><span class="rule"></span><span class="folio-kicker">Eight pages from 32 chapters</span></div>
+  <div class="chap-intro"><h2 class="h2 frost-text">The World<br>Behind the Meme.</h2><p class="sub">Every chapter is named after a place and a date. Here are eight of them, each linked to the real text.</p></div>
+  <div class="chap-pin"><div class="chap-track">
+    <article class="page"><div class="page-img"><img src="assets/img/zk-watch.webp" alt="A wristwatch projecting a green checkmark beside a feather-rotored toy drone" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 01 · Meldan, Veridia · Snowmoon 3</span><h3>The Toy Drone</h3><p class="page-k">Verified, and nothing more.</p><p>Gladias, an Acolyte of the Order of Steering, walks through Kalimar. His watch confirms that a passing drone is only a toy, and learns nothing else about it.</p><a class="link ch-link" data-ch="1" target="_blank" rel="noopener">Read chapter 1<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/dzego.webp" alt="A neon market street in Pafogai Du" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 02 · Pafogai Du, Dzego · Snowmoon 5</span><h3>Hun Min Street</h3><p class="page-k">Grow roots, no head.</p><p>Fin and Zei walk through Dzego&rsquo;s busy electronics district, where privacy and surveillance gear are sold next door to each other.</p><a class="link ch-link" data-ch="2" target="_blank" rel="noopener">Read chapter 2<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/privacy-robe.webp" alt="A figure seen from behind in a violet privacy robe on a snowy path" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 06 · Meldan, Veridia · Rainmoon 12</span><h3>The Privacy Robe</h3><p class="page-k">Hood up. Signals out.</p><p>Gladias heads out in a full-length violet privacy robe while Emerald, his local AI, explains the science quietly in his ear.</p><a class="link ch-link" data-ch="6" target="_blank" rel="noopener">Read chapter 6<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/freetown.webp" alt="The skyline of Freetown" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 10 · Freetown, United Cities · Windmoon 24</span><h3>Prices Rising</h3><p class="page-k">The Arctic scare.</p><p>Jahn, a researcher at the Freetown Economics Institute, notices that prices have gone up. The cities are arguing over defense budgets.</p><a class="link ch-link" data-ch="10" target="_blank" rel="noopener">Read chapter 10<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/minpentai-board.webp" alt="A holographic Minpentai board with robed priests in silhouette" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 12 · Sadzu Du, Dzego · Grasstime 22</span><h3>Minpentai</h3><p class="page-k">Gliders, walls, negentropy.</p><p>On the train to Dzego&rsquo;s capital, Zei beats three AIs at once at Minpentai. Then the game&rsquo;s robed priests meet him on the platform.</p><a class="link ch-link" data-ch="12" target="_blank" rel="noopener">Read chapter 12<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/arctic-fleet.webp" alt="An Arctic drone fleet over a frozen sea" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 20 · Meldan, Veridia · Mistime 10</span><h3>Northglade Falls</h3><p class="page-k">The headline nobody wanted.</p><p>Seila wakes to an alarm. The Arctic Empire has taken Northglade, and only the Greater Plum Harbor is still outside its control.</p><a class="link ch-link" data-ch="20" target="_blank" rel="noopener">Read chapter 20<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/elenar.webp" alt="Three figures seen from behind on a snowy hill above a pine forest" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 29 · Elenar Forest, Veridia · Snowmoon 29</span><h3>The Hill at Dawn</h3><p class="page-k">Nobody is ever ready.</p><p>A year after the story began, Zei, Mu and Bai stand in the snowy forest where the counterstrike will begin.</p><a class="link ch-link" data-ch="29" target="_blank" rel="noopener">Read chapter 29<svg><use href="#i-arrow"/></svg></a></div></article>
+    <article class="page"><div class="page-img"><img src="assets/img/northglade.webp" alt="A snowy summit staircase overlooking an island city with red flowers" loading="lazy"></div><div class="page-body"><span class="page-no">Chapter 32 · Meldan, Veridia · Rainmoon 12, 3725</span><h3>After the Thaw</h3><p class="page-k">Cameras come down.</p><p>Northglade is free. In Kalimar the street cameras are taken down, and red Northglade flowers fill the shop windows.</p><a class="link ch-link" data-ch="32" target="_blank" rel="noopener">Read chapter 32<svg><use href="#i-arrow"/></svg></a></div></article>
+  </div></div>
+</section>
+
+<!-- FOLIO IV: dispatches as ice-sealed letters -->
+<section id="folio-4" class="folio" data-folio="IV">
+  <div class="folio-head"><span class="folio-no">Folio IV</span><span class="rule"></span><span class="folio-kicker">Written by the community</span></div>
+  <h2 class="h2 frost-text center reveal">A Story in Motion.</h2>
+  <p class="sub center reveal">Public dispatches from @snowmoonerc. The novel has its 32 chapters; the community writes the rest.</p>
+  <ol class="letters">
+    <li class="letter reveal"><span class="wax">01</span><div><p class="l-k">Chapter 01 / The beginning</p><h3>One story. One shared symbol.</h3><p>The community confirms its contract address and opens a new chapter with “One Moon. Infinite Dreams.”</p></div></li>
+    <li class="letter reveal"><span class="wax">02</span><div><p class="l-k">Day one / Community</p><h3>Day one is only the beginning.</h3><p>The community’s Day One recap marks the first step from a story to a shared culture.</p></div></li>
+    <li class="letter reveal"><span class="wax">03</span><div><p class="l-k">Identity / Brand</p><h3>A signal becomes recognizable.</h3><p>The project shares DEX Screener and AVE profile and branding updates.</p></div></li>
+    <li class="letter reveal"><span class="wax">04</span><div><p class="l-k">Culture / The next chapter</p><h3>Every meme has a story.</h3><p>One symbol. One community. SNOWMOON continues to find its own identity and place in meme culture.</p></div></li>
+  </ol>
+</section>
+ 
+<!-- FOLIO V: frozen polaroids that thaw -->
+<section id="folio-5" class="folio" data-folio="V">
+  <div class="folio-head"><span class="folio-no">Folio V</span><span class="rule"></span><span class="folio-kicker">Keep the imagination going</span></div>
+  <h2 class="h2 frost-text center reveal">Make the Next Meme.</h2>
+  <p class="sub center reveal">Scenes from Snowmoon, ready for memes. Breathe on the ice to thaw each print &mdash; then view it.</p>
+  <div class="thaw-grid">
+    <figure class="polaroid" style="--r:3deg"><div class="ice"><img src="assets/img/logo.webp" alt="The lunar core logo" loading="lazy" class="contain"><canvas class="rime"></canvas></div><figcaption><b>The Lunar Core</b><span>Logo artwork</span><button type="button" class="view-btn" aria-label="View The Lunar Core"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:-2deg"><div class="ice"><img src="assets/img/meldan.webp" alt="Meldan, forest capital of Veridia" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Meldan</b><span>Veridia</span><button type="button" class="view-btn" aria-label="View Meldan"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:5deg"><div class="ice"><img src="assets/img/dzego.webp" alt="Pafogai Du at night" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Pafogai Du</b><span>Dzego</span><button type="button" class="view-btn" aria-label="View Pafogai Du"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:-5deg"><div class="ice"><img src="assets/img/privacy-robe.webp" alt="A figure in a violet privacy robe, from behind" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Privacy Robe</b><span>Chapter 6</span><button type="button" class="view-btn" aria-label="View Privacy Robe"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:-3deg"><div class="ice"><img src="assets/img/minpentai-board.webp" alt="A holographic Minpentai board" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Minpentai</b><span>Chapter 12</span><button type="button" class="view-btn" aria-label="View Minpentai"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:4deg"><div class="ice"><img src="assets/img/arctic-fleet.webp" alt="Arctic drone fleet" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Arctic Drones</b><span>The Empire</span><button type="button" class="view-btn" aria-label="View Arctic Drones"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:-2deg"><div class="ice"><img src="assets/img/elenar.webp" alt="Three figures over Elenar Forest" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Elenar Dawn</b><span>Chapter 29</span><button type="button" class="view-btn" aria-label="View Elenar Dawn"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+    <figure class="polaroid" style="--r:3deg"><div class="ice"><img src="assets/img/northglade.webp" alt="Northglade summit with red flowers" loading="lazy"><canvas class="rime"></canvas></div><figcaption><b>Northglade Free</b><span>Chapter 32</span><button type="button" class="view-btn" aria-label="View Northglade Free"><svg><use href="#i-eye"/></svg></button></figcaption></figure>
+  </div>
+</section>
+
+<!-- FOLIO VI: acquire -->
+<section id="folio-6" class="folio" data-folio="VI">
+  <div class="folio-head"><span class="folio-no">Folio VI</span><span class="rule"></span><span class="folio-kicker">The ritual of acquiring</span></div>
+  <h2 class="h2 frost-text center reveal">How to Buy.</h2>
+  <ol class="ritual">
+    <li class="reveal"><svg><use href="#i-wallet"/></svg><b>I</b><h3>Get a wallet</h3><p>Install MetaMask, Rabby or any Ethereum wallet and secure your seed phrase.</p></li>
+    <li class="reveal"><svg><use href="#i-eth"/></svg><b>II</b><h3>Add ETH</h3><p>Fund the wallet with ETH on Ethereum mainnet to swap and cover gas.</p></li>
+    <li class="reveal"><img src="assets/brand/uniswap.png" alt=""><b>III</b><h3>Open Uniswap</h3><p>Go to Uniswap, connect your wallet and paste the SNOWMOON contract.</p></li>
+    <li class="reveal"><svg><use href="#i-swap"/></svg><b>IV</b><h3>Swap</h3><p>Choose your amount, confirm the swap and welcome to the next chapter.</p></li>
+  </ol>
+  <div class="ca-plate wide reveal">
+    <div class="ca-meta"><span>Contract &middot; Ethereum</span><code class="ca-value">0xComingSoon</code></div>
+    <button class="ca-copy" type="button" aria-label="Copy contract address"><span class="ca-btn"><svg><use href="#i-copy"/></svg>Copy</span></button>
+  </div>
+  <div class="cta-row center">
+    <a class="btn-ice buy-link" target="_blank" rel="noopener"><img src="assets/brand/uniswap.png" alt="">Buy on Uniswap</a>
+    <a class="btn-ghost gmgn-link" target="_blank" rel="noopener"><img src="assets/brand/gmgn.png" alt="">GMGN</a>
+    <a class="btn-ghost chart-link" target="_blank" rel="noopener"><img src="assets/brand/dexscreener.png" alt="">DEX Screener</a>
+  </div>
+  <div class="mirror reveal"><div id="chart" class="chart"><span>Summoning the chart…</span></div></div>
+</section>
+
+<!-- FOLIO VII: epilogue -->
+<section id="folio-7" class="epilogue" data-folio="VII">
+  <img class="epi-logo" src="assets/img/logo.webp" alt="" width="140" height="140" loading="lazy">
+  <p class="eyebrow">Snowmoon 3725 &middot; after the thaw</p>
+  <h2 class="epi-t"><span class="frost-text snowcap">Grow Roots.</span><span class="frost-text">No Head.</span><em class="script">Just Memes.</em></h2>
+  <p class="lede">One author wrote it and gave it away under GPL v3.<br>Everyone else gets to keep it going.</p>
+  <div class="cta-row center">
+    <a class="btn-ice x-link" target="_blank" rel="noopener"><img src="assets/brand/x.svg" alt="" class="inv">Join us on X</a>
+    <a class="btn-ghost tg-link" target="_blank" rel="noopener"><img src="assets/brand/telegram.svg" alt="">Join Telegram</a>
+    <!-- <a class="btn-ghost cg-link" target="_blank" rel="noopener"><img src="assets/coingecko.png" alt="">CoinGecko</a> -->
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-brand"><img src="assets/img/logo.png" alt="" width="36" height="36"><span>SNOWMOON</span><small>$SNOWMOON &middot; Ethereum</small></div>
+  <nav class="foot-links" aria-label="Footer"><a class="x-link" target="_blank" rel="noopener">X / Twitter</a><a class="tg-link" target="_blank" rel="noopener">Telegram</a><a class="novel-link" target="_blank" rel="noopener">Read the novel</a><button type="button" id="replay">Replay intro</button></nav>
+  <p class="foot-m">SNOWMOON. Infinite Dreams. &copy; 2026 SNOWMOON</p>
+  <p class="foot-d">Parody / fan project: $SNOWMOON is a fan-made community meme token inspired by the novel <em>Snowmoon</em>. It is not affiliated with or endorsed by the novel&rsquo;s author. The banner portrait is community fan art. Nothing here is financial advice.</p>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"><svg><use href="#i-check"/></svg><span>Copied</span></div>
+
+<div id="viewer" class="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewer-cap">
+  <button class="viewer-close" type="button" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <figure>
+    <img alt="">
+    <figcaption id="viewer-cap"></figcaption>
+  </figure>
+</div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
