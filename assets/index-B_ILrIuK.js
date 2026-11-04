@@ -20823,13 +20823,13 @@ Ct.core = {
 };
 l2() && ut.registerPlugin(Ct);
 const gl = {
-    contractAddress: "0xComingSoon",
+    contractAddress: "0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
     buyUrl:
-      "https://app.uniswap.org/swap?chain=mainnet&outputCurrency=0xComingSoon",
+      "https://app.uniswap.org/swap?chain=mainnet&outputCurrency=0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
     chartUrl:
-      "https://gmgn.ai/eth/token/0xComingSoon",
+      "https://gmgn.ai/eth/token/0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
     dexUrl:
-      "https://dexscreener.com/ethereum/0xComingSoon",
+      "https://dexscreener.com/ethereum/0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
     xUrl: "https://x.com/snowmoon_erc",
     telegramUrl: "https://t.me/snowmoon_erc",
   },
