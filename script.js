@@ -1,12 +1,12 @@
 /* ===== CONFIG (real values from snowmoon.pro) ===== */
 const CONFIG = {
-  CA: "0xComingSoon",
+  CA: "0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
   CHAIN: "ethereum",
-  PAIR: "0xComingSoon",
-  BUY: "https://app.uniswap.org/swap?chain=mainnet&outputCurrency=0xComingSoon",
-  GMGN: "https://gmgn.ai/eth/token/0xComingSoon",
+  PAIR: "0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
+  BUY: "https://app.uniswap.org/swap?chain=mainnet&outputCurrency=0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
+  GMGN: "https://gmgn.ai/eth/token/0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
   CHART:
-    "https://dexscreener.com/ethereum/0xComingSoon",
+    "https://dexscreener.com/ethereum/0x3d08c83f21b546c58c67bd3ce762aa8c5bd1a7a0",
   X: "https://x.com/snowmoon_erc",
   TG: "https://t.me/snowmoon_erc",
   CG: "https://www.coingecko.com/en/coins/snowmoon",
