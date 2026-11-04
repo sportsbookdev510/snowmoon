@@ -20831,7 +20831,7 @@ const gl = {
     dexUrl:
       "https://dexscreener.com/ethereum/0xComingSoon",
     xUrl: "https://x.com/snowmo_erc",
-    telegramUrl: "https://telegram.me/Snowmoonerc",
+    telegramUrl: "https://t.me/snowmoon_erc",
   },
   N8 = "modulepreload",
   C8 = function (d) {
